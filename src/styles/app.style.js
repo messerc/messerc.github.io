@@ -20,7 +20,8 @@ s.img = {
   border: '3px solid white',
   borderRadius: '50%',
   boxShadow: '3px 1px 1px rgb(200, 200, 200)',
-  maxWidth: '100px'
+  maxWidth: '100px',
+  marginBottom: '25px'
 };
 
 s.gif = {
@@ -38,9 +39,7 @@ s.pText = {
 }
 
 s.routeContainer = {
-  marginTop: '60px',
-  paddingLeft: '5px',
-  paddingRight: '5px'
+
 }
 
 export default s;

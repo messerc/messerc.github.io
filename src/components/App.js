@@ -9,17 +9,36 @@ export const App = () => {
   return (
     <div style={s.root}>
       <div style={s.container}>
-      <h1>Christopher Messer</h1>
+      <h3><strong>CHRISTOPHER MESSER</strong></h3>
+      <h5 className="text-muted">Front-end / data visualization developer</h5>
+            <ul>
+        <li>
+          <span className="fa fa-github fa-2x" style={{color: 'rgb(155, 155, 155)'}}/>
+        </li>
+                  <li>
+          <span className="fa fa-gitlab fa-2x" style={{color: 'rgb(155, 155, 155)'}}/>
+        </li>
+        <li>
+          <span className="fa fa-linkedin fa-2x" style={{color: 'rgb(155, 155, 155)'}}/>
+        </li>
+                <li>
+          <span className="fa fa-medium fa-2x" style={{color: 'rgb(155, 155, 155)'}}/>
+        </li>
+      </ul>
+      <Link to="/">
         <img style={s.img} src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAuVAAAAJDdhOTE3ZWRmLWFhYTAtNGJlZi1hYjIzLWFhNTEwODVlMjljYg.jpg" />
-              <div>
+      </Link>
+              <ul>
+                <li>
         <Link to="/work">work</Link>
-      </div>
-      <div>
+      </li>
+      <li>
         <Link to="/about">about</Link> 
-      </div>
+        </li>
+      </ul>
     </div>
       <Switch>
-        <Route exact path="/" component={Work} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/work" component={Work} />
       </Switch>
           <div>
