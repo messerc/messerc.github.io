@@ -1,45 +1,31 @@
 import React from 'react';
 import Interactive from 'react-interactive';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import ExampleComponent from './ExampleComponent';
-import PageNotFound from './PageNotFound';
-import Breadcrumbs from './Breadcrumbs';
-import s from '../styles/app.style';
+import Work from './Work';
+import s from '../styles/app.style.js'
 
-export default function App() {
+export const App = () => {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
-      <Interactive
-        as="a"
-        href="https://github.com/rafrex/spa-github-pages"
-        style={s.repoLink}
-        {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
-
-      <nav style={s.breadcrumbs}>
-        <Breadcrumbs />
-      </nav>
-
+      <div style={s.container}>
+      <h1>Christopher Messer</h1>
+        <img style={s.img} src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAuVAAAAJDdhOTE3ZWRmLWFhYTAtNGJlZi1hYjIzLWFhNTEwODVlMjljYg.jpg" />
+              <div>
+        <Link to="/work">work</Link>
+      </div>
+      <div>
+        <Link to="/about">about</Link> 
+      </div>
+    </div>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/example" component={ExampleComponent} />
-        <Route component={PageNotFound} />
+        <Route exact path="/" component={Work} />
+        <Route exact path="/work" component={Work} />
       </Switch>
-
-      <div style={s.creditLine}>
-        <Interactive
-          as="a"
-          href="http://www.rafaelpedicini.com"
-          interactiveChild
-          focus={{}}
-          touchActive={{}}
-          touchActiveTapOnly
-        >
-          Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
-        </Interactive>
+          <div>
       </div>
     </div>
   );
 }
+
+export default App
