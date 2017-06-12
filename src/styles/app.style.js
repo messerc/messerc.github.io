@@ -24,13 +24,23 @@ s.img = {
 };
 
 s.gif = {
-  maxWidth: '500px',
-  border: '3px solid white',
-  boxShadow: '3px 1px 1px rgb(200, 200, 200)'
+  maxWidth: '95%',
+  minHeight: '140px',
+  border: '1px solid red'
 }
 
 s.container = {
   textAlign: 'center'
+}
+
+s.pText = {
+  fontSize: '12px'
+}
+
+s.routeContainer = {
+  marginTop: '60px',
+  paddingLeft: '5px',
+  paddingRight: '5px'
 }
 
 export default s;
