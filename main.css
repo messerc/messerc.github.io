@@ -58,4 +58,10 @@ a:focus {
 
 .reference-line-label {
   float: right;
+  margin-right: 10%;
+}
+
+.pie-container {
+  margin-top: 20px;
+  padding: 0px;
 }

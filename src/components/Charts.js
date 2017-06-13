@@ -1,7 +1,7 @@
 import React from 'react';
 import s from '../styles/app.style.js'
 const twitchMineVid = require('file-loader!./twitchminedemo.mp4');
-import { Area, AreaChart, LineChart, Line, ResponsiveContainer, XAxis, YAxis, ReferenceLine } from 'recharts';
+import { Area, AreaChart, LineChart, Line, ResponsiveContainer, XAxis, YAxis, PieChart, Pie, ReferenceLine, Cell, Label } from 'recharts';
 
 const areaChartData = [
   {age: 1, hours: 0},
@@ -30,8 +30,24 @@ const areaChartData = [
   {age: 24, hours: 5.8},
   {age: 25, hours: 3},
   {age: 26, hours: 0},
-  {age: 27, hours: 0}
+  {age: 27, hours: 0},
+  {age: 28, hours: 0},
+  {age: 29, hours: 0},
+  {age: 30, hours: 0},
+  {age: 31, hours: 0}
 ]
+
+const pieDataNormal = [
+  {feel: 'concerned', value: .10},
+  {day: 'not concerned', value: .9}
+]
+
+const pieDataWindy = [
+  {day: 'concerned', value: .99},
+  {day: 'not concerned', value: .01}
+]
+
+const Colors = ['rgba(165, 210, 95, 0.7)', 'rgb(225, 225, 225)']
 
 export default class Charts extends React.Component {
 
@@ -45,8 +61,8 @@ export default class Charts extends React.Component {
           <ResponsiveContainer height={300} margin={{ top: 50, right: 10, left: 10, bottom: 5 }}>
             <AreaChart data={areaChartData} dot={false}>
               <Area dataKey="hours" style={{fill: 'rgba(165, 210, 95, 0.7)', stroke: 'none'}}/>
-              <XAxis dataKey="age" type="number" tickLine={false} tick={false} />
-              <ReferenceLine x={25} style={{stroke: 'green'}}/>
+              <XAxis dataKey="age" type="number" tickLine={false} tick={false} style={{stroke: 'rgb(205, 205, 205)'}}/>
+              <ReferenceLine x={25} style={{stroke: 'rgb(155, 155, 155)'}}/>
             </AreaChart>
           </ResponsiveContainer>
         </div>
@@ -54,14 +70,40 @@ export default class Charts extends React.Component {
       <div className="row work-row">
         <div className="col-sm-10 col-sm-offset-1">
           <h4 className="text-muted"><strong>PERCENT OF DAY SPENT CONCERNED WITH RECEDING HAIRLINE</strong></h4>
-          <h6 className="reference-line-label">Moved in with girlfriend</h6>
-          <ResponsiveContainer height={300} margin={{ top: 50, right: 10, left: 10, bottom: 5 }}>
-            <AreaChart data={areaChartData} dot={false}>
-              <Area dataKey="hours" style={{fill: 'rgba(165, 210, 95, 0.7)', stroke: 'none'}}/>
-              <XAxis dataKey="age" type="number" tickLine={false} tick={false} />
-              <ReferenceLine x={25} style={{stroke: 'green'}}/>
-            </AreaChart>
+          <div className="col-xs-6 pie-container">
+          <h4 style={{textAlign: 'center'}}>On a normal day</h4>
+          <ResponsiveContainer height={200}>
+            <PieChart>
+              <Pie data={pieDataNormal}
+                style={{stroke: 'none'}}
+                nameKey="feel"
+                dataKey="value"
+                innerRadius={60}
+                outerRadius={80}
+                fill='rgba(165, 210, 95, 0.7)'>
+                {pieDataNormal.map((entry, index) => <Cell key={index} fill={Colors[index % Colors.length]} />)}
+                <Label position="center" style={{fontSize: '16px', color: 'white'}}>10%</Label>
+              </Pie>
+            </PieChart>
           </ResponsiveContainer>
+          </div>
+          <div className="col-xs-6 pie-container">
+          <h4 style={{textAlign: 'center'}}>On a windy day</h4>
+          <ResponsiveContainer height={200}>
+            <PieChart>
+              <Pie data={pieDataWindy}
+                style={{stroke: 'none'}}
+                nameKey="feel"
+                dataKey="value"
+                innerRadius={60}
+                outerRadius={80}
+                fill='rgba(165, 210, 95, 0.7)'>
+                {pieDataWindy.map((entry, index) => <Cell key={index} fill={Colors[index % Colors.length]} />)}
+                <Label position="center">99%</Label>
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+          </div>
         </div>
       </div>
     </div>
