@@ -18,7 +18,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-interactive": "^0.6.5",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "react-router-transition": "^0.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "file-loader": "^0.11.2",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
   }
