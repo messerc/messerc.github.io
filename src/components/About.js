@@ -2,7 +2,7 @@ import React from 'react';
 import s from '../styles/app.style.js'
 const twitchMineVid = require('file-loader!./twitchminedemo.mp4');
 
-export default class Work extends React.Component {
+export default class About extends React.Component {
 
   render() {
     return (

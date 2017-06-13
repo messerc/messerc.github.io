@@ -21,8 +21,9 @@ html {
 
 
 .work-row {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
   background-color: rgb(235, 235, 235);
 }
 
@@ -53,4 +54,8 @@ a:focus {
 .icon:hover {
   color: #93C54B;
   cursor: pointer;
+}
+
+.reference-line-label {
+  float: right;
 }

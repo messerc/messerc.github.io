@@ -19,7 +19,8 @@
     "react-dom": "^15.5.4",
     "react-interactive": "^0.6.5",
     "react-router-dom": "^4.1.1",
-    "react-router-transition": "^0.1.1"
+    "react-router-transition": "^0.1.1",
+    "recharts": "^1.0.0-alpha.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
