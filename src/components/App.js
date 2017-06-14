@@ -45,7 +45,7 @@ export const App = () => {
             <li>
         <NavLink to="/charts" activeClassName="active">my life in charts</NavLink> 
         </li>
-      <li>
+      <li className="slight-offset">
         <NavLink to="/about" activeClassName="active">about</NavLink> 
         </li>
       </ul>
