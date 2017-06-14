@@ -29,7 +29,7 @@ export const App = () => {
           <span className="fa fa-linkedin fa-2x icon"/>
           </a>
         </li>
-        <li>
+        <li className="slight-offset">
           <a href="https://medium.com/@messer55">
           <span className="fa fa-medium fa-2x icon"/>
           </a>
