@@ -3,7 +3,7 @@ import s from '../styles/app.style.js'
 const twitchMineVid = require('file-loader!./twitchminedemo.mp4');
 
 export default class Work extends React.Component {
-
+  
   render() {
     return (
     <div className="route-container">
@@ -11,7 +11,7 @@ export default class Work extends React.Component {
         <div className="col-sm-5 col-sm-offset-1">
           <a href="https://www.twitchmine.com/">
           <video className="video" autoPlay loop >
-            <source src={twitchMineVid} type="video/mp4" />
+            <source src={twitchMineVid} type="video/mp4"  />
           </video>
           </a>
         </div>
@@ -28,7 +28,7 @@ export default class Work extends React.Component {
             <span className="devicon-postgresql-plain" />{' '}
             <span style={{fontSize: '10px'}}>redux, recharts</span>
           </h5>
-          <p style={s.pText}>twitchmine is a full-fledged single-page application built to understand the historical viewership trends on popular streaming site twitch.tv. From initial idea to launch, this project took about twelve months. When I first wanted to build this, I had never written a line of code before.</p>
+          <p style={s.pText}>twitchmine is a full-fledged single-page application built to understand the historical viewership trends on popular streaming site twitch.tv. I built the entire front-end using React, Redux, data visualization library Recharts, and other tools. I collaborated with a seasoned back-end developer to map out our CRON jobs, design the schema and our API endpoints. In its first 2 weeks, the site had over 1k unique visitors.</p>
         </div>
       </div>
        <div className="row work-row">

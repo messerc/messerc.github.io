@@ -38,20 +38,20 @@ export const App = () => {
       <Link to="/">
         <img style={s.img} src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAuVAAAAJDdhOTE3ZWRmLWFhYTAtNGJlZi1hYjIzLWFhNTEwODVlMjljYg.jpg" />
       </Link>
-              <ul>
-                <li>
+      <ul>
+        <li>
         <NavLink to="/work" activeClassName="active">work</NavLink>
-      </li>
-            <li>
+        </li>
+        <li>
         <NavLink to="/charts" activeClassName="active">my life in charts</NavLink> 
         </li>
-      <li className="slight-offset">
+        <li className="slight-offset">
         <NavLink to="/about" activeClassName="active">about</NavLink> 
         </li>
       </ul>
     </div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Work} />
         <Route exact path="/work" component={Work} />
         <Route exact path="/charts" component={Charts} />
         <Route exact path ="/about" component={About} />
