@@ -1,4 +1,5 @@
 const twitchMineVid = require('file-loader!./twitchminedemo.mp4');
+const chattermonVid = require('file-loader!./chattermon.mov');
 
 
 const projects = [
@@ -13,9 +14,11 @@ const projects = [
     noIconTechs: ['react', 'redux']
   },
   {
-    name: 'chattermon',
+    name: 'Chattermon',
+    source: 'https://chattermon-staging.herokuapp.com',
     description: 'A browser-based pokemon battle simulator. Implemented with Socket.IO, Node / express, and React',
-    video: false,
+    video: true,
+    videoSource: chattermonVid,
     imageSource: '',
     role: 'front-end lead / game logic flow',
     techs: ['javascript-plain', 'react-original', 'webpack-plain'],

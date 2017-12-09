@@ -19,6 +19,9 @@ module.exports = {
     }, {
       test: /\.mp4$/,
       loader: 'url?limit=10000&mimetype=video/mp4'
+  }, {
+      test: /\.mov$/,
+      loader: 'url?limit=10000&mimetype=video/mov'
   }]
   },
 
