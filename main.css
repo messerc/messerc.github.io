@@ -1,3 +1,17 @@
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+
 .video {
   height: auto;
   max-width: 100%;
@@ -6,19 +20,33 @@
   transition: 0.2s all;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 .video:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
+.profile-pic {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 3px 1px 1px rgb(200, 200, 200);
+  max-width: 100px;
+  margin-bottom: 25px;
+};
+
 .route-container {
   margin-top: 60px;
 }
 
+.work-container {
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .work-row {
   padding-top: 20px;
@@ -27,23 +55,8 @@ html {
   background-color: rgb(235, 235, 235);
 }
 
-li {
-  list-style: none;
-  display: inline;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
 .active {
   border-bottom: 3px solid green;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: none;
 }
 
 .icon {
@@ -56,16 +69,19 @@ a:focus {
   cursor: pointer;
 }
 
-.reference-line-label {
-  float: right;
-  margin-right: 15%;
-}
+.root {
+  font-family: helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px
+};
 
-.pie-container {
-  margin-top: 20px;
-  padding: 0px;
-}
+.title {
+  font-size: 20px;
+  margin-bottom: 0.5vh;
+};
 
-.slight-offset {
-  margin-right: 30px;
-}
+.repo-link {
+  font-size: 14px;
+};
+
+
