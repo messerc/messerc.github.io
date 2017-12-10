@@ -5,7 +5,7 @@ import Work from "./Work";
 
 const App = () => {
   return (
-    <div className="container-fluid">
+    <div>
       <Header />
       <Work />
     </div>

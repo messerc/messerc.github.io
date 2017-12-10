@@ -3,8 +3,8 @@ import React from "react";
 const Project = props => {
   const { project } = props;
   return (
-    <div className="row work-row">
-      <div className="col-sm-5 col-sm-offset-1">
+    <div className="work-row">
+      <div>
         <a href={project.source}>
           {(() => {
             if (project.video) {
@@ -19,7 +19,7 @@ const Project = props => {
           })()}
         </a>
       </div>
-      <div className="col-sm-4">
+      <div>
         <h3>{project.name}</h3>
         <h5 className="text-muted">{project.role}</h5>
         <h5 className="text-muted">

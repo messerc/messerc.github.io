@@ -6,11 +6,20 @@ a:focus {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-  display: inline;
-  margin-right: 20px;
+body {
+  background-color: rgb(250, 250, 250);
 }
+
+/* === Header === */
+
+.icon-flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+/* ============== */
+
 
 .video {
   height: auto;
@@ -21,8 +30,31 @@ li {
 }
 
 .video:hover {
-  opacity: 0.6;
+  opacity: 0.8;
   cursor: pointer;
+}
+
+.profile-pic-container {
+  align-self: center;
+  margin-top: 3em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.info-container {
+  margin-right: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    margin-right: 5em;
+  }
+}
+
+.row-header {
+  align-self: center;
+  justify-content: center;
+  max-width: 800px;
 }
 
 .profile-pic {
@@ -30,7 +62,6 @@ li {
   border-radius: 50%;
   box-shadow: 3px 1px 1px rgb(200, 200, 200);
   max-width: 100px;
-  margin-bottom: 25px;
 };
 
 .route-container {
@@ -38,21 +69,31 @@ li {
 }
 
 .work-container {
-  text-align: left;
-}
-
-.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .work-row {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 80px;
-  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 1px 1px rgb(235, 235, 235);
 }
 
 .active {
