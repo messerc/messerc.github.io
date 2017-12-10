@@ -12,7 +12,7 @@ const Header = () => (
       <h4>
         <strong>CHRISTOPHER MESSER</strong>
       </h4>
-      <h5 className="text-muted">Front-end / data viz developer</h5>
+      <h5 className="text-muted">Front-end engineer</h5>
       <div className="icon-flex">
         <div>
           <a href="https://github.com/messerc">
