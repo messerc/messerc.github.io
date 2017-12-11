@@ -1,5 +1,24 @@
 import React from "react";
 
+const icons = [
+  {
+    link: "https://github.com/messerc",
+    icon: "fa fa-github fa-2x icon"
+  },
+  {
+    link: "http://imgur.com/a/stzZn",
+    icon: "fa fa-gitlab fa-2x icon"
+  },
+  {
+    link: "https://www.linkedin.com/in/chris-messer-ba123320/",
+    icon: "fa fa-linkedin fa-2x icon"
+  },
+  {
+    link: "https://medium.com/@messer55",
+    icon: "fa fa-medium fa-2x icon"
+  }
+];
+
 const Header = () => (
   <div className="header">
     <div className="profile-pic-container">
@@ -14,26 +33,15 @@ const Header = () => (
       </h4>
       <h5 className="text-muted">Front-end engineer</h5>
       <div className="icon-flex">
-        <div>
-          <a href="https://github.com/messerc">
-            <span className="fa fa-github fa-2x icon" />
-          </a>
-        </div>
-        <div>
-          <a href="http://imgur.com/a/stzZn">
-            <span className="fa fa-gitlab fa-2x icon" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/chris-messer-ba123320/">
-            <span className="fa fa-linkedin fa-2x icon" />
-          </a>
-        </div>
-        <div>
-          <a href="https://medium.com/@messer55">
-            <span className="fa fa-medium fa-2x icon" />
-          </a>
-        </div>
+        {icons.map(icon => {
+          return (
+            <div key={icon.link}>
+              <a href={icon.link}>
+                <span className={icon.icon} />
+              </a>
+            </div>
+          )
+        })}
       </div>
     </div>
   </div>

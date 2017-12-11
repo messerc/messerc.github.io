@@ -6,17 +6,9 @@ const Project = props => {
     <div className="work-row">
       <div>
         <a href={project.source}>
-          {(() => {
-            if (project.video) {
-              return (
-                <video className="video" autoPlay loop>
-                  <source src={project.videoSource} type="video/mp4" />
-                </video>
-              );
-            } else {
-              return <img className="video" src={project.imageSource} />;
-            }
-          })()}
+          <video className="video" autoPlay loop>
+            <source src={project.videoSource} type="video/mp4" />
+          </video>
         </a>
       </div>
       <div>
