@@ -18,7 +18,7 @@ const Project = props => {
         <h5 className="text-muted">
           built with:{" "}
           {project.techs.map(tech => {
-            return <span className={`devicon-${tech}`} />;
+            return <span className={`devicon-${tech}`} key={tech} />;
           })}
           <span style={{ fontSize: "10px" }}>
             {" "}
