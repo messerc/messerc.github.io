@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link, Switch, Route, IndexRoute } from "react-router-dom";
+import About from "./About";
 import Header from "./Header";
 import Work from "./Work";
 
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <Header />
       <Work />
+      <About />
     </div>
   );
 };

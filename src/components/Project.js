@@ -6,7 +6,7 @@ const Project = props => {
     <div className="work-row">
       <div>
         <a href={project.source}>
-          <video className="video" playsInline autoPlay loop muted>
+          <video className="video" playsInline autoPlay loop muted="muted">
             <source src={project.videoSource} type="video/mp4" />
             <source src={project.videoSource} type="video/mov" />
           </video>

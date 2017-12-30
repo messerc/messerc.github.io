@@ -37,7 +37,7 @@ body {
 .profile-pic-container {
   align-self: center;
   margin-top: 3em;
-  margin-right: 1em;
+  margin-right: 2em;
   margin-bottom: 2em;
 }
 
@@ -48,6 +48,9 @@ body {
 @media screen and (min-width: 768px) {
   .info-container {
     margin-right: 4em;
+  }
+  .work-row-header {
+    margin-right: 2em;
   }
 }
 
