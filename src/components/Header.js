@@ -31,7 +31,7 @@ const Header = () => (
       <h4>
         <strong>CHRISTOPHER MESSER</strong>
       </h4>
-      <h5 className="text-muted">Front-end engineer</h5>
+      <h5 className="text-muted">Software engineer</h5>
       <div className="icon-flex">
         {icons.map(icon => {
           return (
