@@ -24,7 +24,7 @@ const Header = () => (
     <div className="profile-pic-container">
       <img
         className="profile-pic"
-        src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAuVAAAAJDdhOTE3ZWRmLWFhYTAtNGJlZi1hYjIzLWFhNTEwODVlMjljYg.jpg"
+        src="https://i.imgur.com/xstmsWx.jpg"
       />
     </div>
     <div className="info-container">
